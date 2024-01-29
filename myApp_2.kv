@@ -1,0 +1,49 @@
+<Container>:
+	
+	text_input: text_input
+	label_widget: label_widget
+	time_widget: time_widget
+	
+	Label:
+		id:time_widget
+		pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+		size_hint: 1, 0.1
+		text: 'HELLO'
+	
+	TextInput:
+		id: text_input
+		pos_hint: {'center_x': 0.25, 'center_y': 0.8}
+		size_hint: 0.4, 0.1
+		multiline: False
+		font_size: 50
+		text: ""
+				
+	Label:
+		id: label_widget
+		pos_hint: {'center_x': 0.75, 'center_y': 0.8}
+		size_hint: 0.4, 0.1
+		text: 'Nothing'
+		font_size: 50
+		
+	Button:
+		pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+		size_hint: 0.8, 0.2
+		text: 'GO'
+		font_size: 50
+		background_color: 'blue'
+		on_release:
+			root.change_label()
+			
+	Button:
+		pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+		size_hint: 0.8, 0.2
+		text: 'Clear'
+		font_size: 50
+		background_color: 'red'
+		on_release:
+			root.clear_label()
+		
+
+		
+
+		
